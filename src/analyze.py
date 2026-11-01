@@ -137,10 +137,16 @@ def main():
             )
         lines.append("")
         lines.append("Критерий обнаружения:")
-        lines.append(f"  IQR-метод: Q1={sorted(pv_values)[len(pv_values)//4]:.3f}, "
-                      f"Q3={sorted(pv_values)[3*len(pv_values)//4]:.3f}, "
-                      f"IQR={upper_iqr - lower_iqr:.3f}")
+        sorted_pv = sorted(pv_values)
+        n = len(sorted_pv)
+        q1_val = sorted_pv[n // 4]
+        q3_val = sorted_pv[3 * n // 4]
+        iqr_val = q3_val - q1_val
+        lines.append(f"  IQR-метод: Q1={q1_val:.3f}, Q3={q3_val:.3f}, "
+                      f"IQR={iqr_val:.3f}")
         lines.append(f"  Границы: [{lower_iqr:.3f}, {upper_iqr:.3f}]")
+        lines.append(f"  Метод: Q1 — элемент [n//4], Q3 — элемент [3n//4] "
+                      f"в отсортированном ряду (n={n}).")
         lines.append(f"  Z-score метод: порог > 2.0 сигм от среднего")
         lines.append("")
         lines.append("Объяснение:")
@@ -171,9 +177,19 @@ def main():
             f"  Относительный разброс: {clean_stdev/clean_mean*100:.2f}%"
         )
         lines.append(
-            "  Закон Бойля–Мариотта выполняется с хорошей точностью "
             "после исключения аномальных измерений."
         )
+    lines.append("")
+    lines.append("  Статистика 11 наблюдений (без измерения №7):")
+    lines.append(f"    n = {len(clean_pv)}")
+    lines.append(f"    Среднее p·V = {clean_mean:.3f} кПа·л")
+    lines.append(f"    Медиана p·V = {statistics.median(clean_pv):.3f} кПа·л")
+    lines.append(f"    Ст. откл    = {clean_stdev:.3f} кПа·л")
+    lines.append(f"    Мин         = {min(clean_pv):.3f} кПа·л")
+    lines.append(f"    Макс        = {max(clean_pv):.3f} кПа·л")
+    lines.append("")
+    lines.append("  Причина отклонения измерения №7 пока не установлена.")
+    lines.append("  Требуется проверка по источнику данных.")
     lines.append("")
     lines.append("=" * 60)
 
