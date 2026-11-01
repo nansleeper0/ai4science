@@ -16,6 +16,11 @@ SUMMARY_JSON_PATH = BASE / "results" / "pv_summary.json"
 
 
 def read_measurements(path: Path) -> list[dict]:
+    """Прочитать исходные измерения.
+    
+    Данные: data/measurements.csv, volume_l в л, pressure_kpa в кПа, temperature_k в К.
+    Проверка: checks/check.py, сквозная проверка результатов; исходники checker не читать.
+    Используется в: src/build_pv.py::main."""
     rows = []
     with open(path, newline="") as f:
         reader = csv.DictReader(f)
@@ -29,6 +34,11 @@ def read_measurements(path: Path) -> list[dict]:
 
 
 def median(values: list[float]) -> float:
+    """Вычислить медиану.
+    
+    Данные: значения pV из src/build_pv.py::main.
+    Проверка: checks/check.py, правильность флагов подозрительных измерений.
+    Используется в: src/build_pv.py::main."""
     s = sorted(values)
     n = len(s)
     if n % 2 == 1:
@@ -37,6 +47,11 @@ def median(values: list[float]) -> float:
 
 
 def sample_stdev(values: list[float]) -> float:
+    """Вычислить выборочное стандартное отклонение.
+    
+    Данные: чистые значения pV из src/build_pv.py::main.
+    Проверка: checks/check.py, значение std_pv_clean в results/pv_summary.json.
+    Используется в: src/build_pv.py::main."""
     n = len(values)
     if n < 2:
         return 0.0
