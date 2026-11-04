@@ -1,0 +1,15 @@
+=== AI4Science doctor ===
+.env: OK (/home/artem/AI4Science/.env)
+YANDEX_CLOUD_API_KEY: задан (40 символов)
+YANDEX_CLOUD_FOLDER: b1gi39jvrih75di87rqs
+модель: qwen3.6-35b-a3b/latest
+модель для /plan: qwen3-235b-a22b-fp8/latest
+данные Goose (сессии, журналы): /home/artem/AI4Science/.goose
+ОС: linux, Python 3.10.12
+goose: 1.50.0
+python venv: Python 3.10.12
+MCP ai4science: OK (17 инструментов: token_budget, load_artifact, list_skills, load_skill, lean_check, lean_health, lean_search_engines, lean_search_loogle, lean_search_leansearch, lean_search_moogle, lean_search_scilib, web_search, web_fetch, pdf_download, pdf_info, pdf_read, pdf_search)
+lean-checker: недоступен (https://scilibai.ru/grag); lean_check вернёт сообщение об ошибке
+бюджет: 106,363 / 3,000,000 (осталось 2,893,637)
+
+Код завершения: 0

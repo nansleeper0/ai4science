@@ -1,0 +1,116 @@
+{
+  "sessions": {
+    "20261101_14": {
+      "id": "20261101_14",
+      "working_dir": "/home/artem/ai4science/week_1/project",
+      "goose_mode": "approve",
+      "model": "gpt://b1gi39jvrih75di87rqs/deepseek-v4-flash/latest",
+      "prompt": "Прочитай только paper/parts/part_02.md. Сожми эту часть до 100–150 слов по-русски: подход, результаты и условия. После каждого содержательного утверждения и числа укажи страницу (с. N).\n\nЗапиши в memory/L1/part_02.md с заголовком «## Расчёт и наблюдательная проверка (с. 3–5)». Другие части, PDF, архив и прежние ответы не читай. Другие файлы не меняй. Проверь объём один раз и заверши работу.",
+      "expected_input": "paper/parts/part_02.md",
+      "output": "memory/L1/part_02.md",
+      "tool_calls": [
+        {
+          "name": "shell",
+          "arguments": {
+            "command": "cat paper/parts/part_02.md"
+          }
+        },
+        {
+          "name": "write",
+          "arguments": {
+            "path": "memory/L1/part_02.md"
+          },
+          "content_sha256": "4f201d968e6235b8bbf9a79c462434fe41d222c93572eb8bdaab284281258360"
+        },
+        {
+          "name": "shell",
+          "arguments": {
+            "command": "python3 -c \"import re; t=open('memory/L1/part_02.md').read(); t=re.sub(r'\\(с\\. \\d+\\)','',t); print(len(t.split()))\""
+          }
+        },
+        {
+          "name": "write",
+          "arguments": {
+            "path": "memory/L1/part_02.md"
+          },
+          "content_sha256": "e383590f9f4169f3917fcef57843c89ede8128648e95c89aeabecf12d53a9a75"
+        },
+        {
+          "name": "shell",
+          "arguments": {
+            "command": "python3 -c \"import re; t=open('memory/L1/part_02.md').read(); t=re.sub(r'\\(с\\. \\d+\\)','',t); print(len(t.split()))\""
+          }
+        }
+      ],
+      "total_tokens": 57856
+    },
+    "20261101_15": {
+      "id": "20261101_15",
+      "working_dir": "/home/artem/ai4science/week_1/project",
+      "goose_mode": "approve",
+      "model": "gpt://b1gi39jvrih75di87rqs/deepseek-v4-flash/latest",
+      "prompt": "Прочитай только memory/L1.md. Создай memory/L2.md: сведения об источнике и 5–10 нумерованных проверяемых тезисов со страницами. Сохраняй числа, условия и ограничения. В конце добавь пустую таблицу сверки.\n\nPDF, исходные части, архив и прежние ответы не читай. Другие файлы не меняй. После одной проверки результата заверши работу.",
+      "expected_input": "memory/L1.md",
+      "output": "memory/L2.md",
+      "tool_calls": [
+        {
+          "name": "shell",
+          "arguments": {
+            "command": "cat memory/L1.md"
+          }
+        },
+        {
+          "name": "write",
+          "arguments": {
+            "path": "memory/L2.md"
+          },
+          "content_sha256": "089e3a182b61a68be2c03d7ff1c0ad70038c15ec1bd8fb4de4e7e82ad152c345"
+        },
+        {
+          "name": "shell",
+          "arguments": {
+            "command": "head -5 memory/L2.md && echo \"---\" && wc -l memory/L2.md"
+          }
+        }
+      ],
+      "total_tokens": 29796
+    },
+    "20261101_16": {
+      "id": "20261101_16",
+      "working_dir": "/home/artem/ai4science/week_1/project",
+      "goose_mode": "approve",
+      "model": "gpt://b1gi39jvrih75di87rqs/deepseek-v4-flash/latest",
+      "prompt": "Прочитай только нумерованные тезисы memory/L2.md. Запиши в memory/L3.md главный результат статьи одной фразой до 30 слов. Сохрани объект исследования и существенные условия.\n\nL1, PDF, исходные части, архив и прежние ответы не читай. Другие файлы не меняй. После одной проверки объёма заверши работу.",
+      "expected_input": "memory/L2.md",
+      "output": "memory/L3.md",
+      "tool_calls": [
+        {
+          "name": "shell",
+          "arguments": {
+            "command": "cat /home/artem/ai4science/week_1/project/memory/L2.md"
+          }
+        },
+        {
+          "name": "write",
+          "arguments": {
+            "path": "/home/artem/ai4science/week_1/project/memory/L3.md"
+          },
+          "content_sha256": "0d9ba3e3ba3a487cda177d97a26aecdcd2cb9077b7aad51737346e422d5cd393"
+        },
+        {
+          "name": "shell",
+          "arguments": {
+            "command": "cd /home/artem/ai4science/week_1/project && python3 -c \"import re; t=open('memory/L3.md').read(); s=re.sub(r'#.*','',t).strip(); print(len(s.split()), 'слов')\""
+          }
+        }
+      ],
+      "total_tokens": 26832
+    }
+  },
+  "raw_sha256": {
+    "memory/L1/part_02.md": "e383590f9f4169f3917fcef57843c89ede8128648e95c89aeabecf12d53a9a75",
+    "memory/L1.md": "3fc7b972b2bf6dc6d18d392c8adb933a56c046fa2b63c3115caef8b7aa64a2ad",
+    "memory/L2.md": "089e3a182b61a68be2c03d7ff1c0ad70038c15ec1bd8fb4de4e7e82ad152c345",
+    "memory/L3.md": "0d9ba3e3ba3a487cda177d97a26aecdcd2cb9077b7aad51737346e422d5cd393"
+  }
+}
