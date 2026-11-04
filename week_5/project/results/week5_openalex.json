@@ -1,0 +1,96 @@
+{
+  "provenance": {
+    "source": "OpenAlex",
+    "tool": "openalex_work",
+    "retrieved": "2026-11-04",
+    "note": "Метаданные пяти источников подтверждены инструментом research openalex_work по DOI (LS1997, M2024) и по openalex_id (три новые работы)."
+  },
+  "works": [
+    {
+      "openalex_id": "W2016427691",
+      "title": "On the Relationship between the Periodic and Aperiodic Variability of Accreting X-Ray Pulsars",
+      "year": 1997,
+      "doi": "10.1086/303611",
+      "cited_by": 33,
+      "oa_status": "bronze",
+      "source": "The Astrophysical Journal",
+      "volume": "476",
+      "issue": "1",
+      "pages": "267-277",
+      "authors": [
+        {"name": "Davide Lazzati", "openalex_id": "A5032453136"},
+        {"name": "Luigi Stella", "openalex_id": "A5016574610"}
+      ],
+      "abstract": "Besides the narrow peaks originating from the periodic signal, the power spectra of accreting X-ray pulsars display continuum components usually increasing toward low frequencies; these arise from the source aperiodic variability. Most studies up to the present have adopted the view that the periodic and aperiodic variations are independent. However, any aperiodic variability in the emission from the accretion column(s) toward the magnetic neutron star should be modulated at the X-ray pulsar period, by virtue of the same rotation-induced geometric effects that give rise to the periodic signal. We develop here a simple shot noise model to test the presence of a coupling between the periodic and aperiodic variability of X-ray pulsars."
+    },
+    {
+      "openalex_id": "W4394580992",
+      "title": "Flickering pulsations in bright X-ray pulsars: the evidence of gravitationally lensed and eclipsed accretion column",
+      "year": 2024,
+      "doi": "10.1093/mnras/stae967",
+      "cited_by": 5,
+      "oa_status": "gold",
+      "source": "Monthly Notices of the Royal Astronomical Society",
+      "volume": "530",
+      "issue": "3",
+      "pages": "3051-3058",
+      "authors": [
+        {"name": "Alexander A. Mushtukov", "openalex_id": "A5064136536"},
+        {"name": "Albert Weng", "openalex_id": "A5095042869"},
+        {"name": "Sergey S. Tsygankov", "openalex_id": "A5051841242"}
+      ],
+      "abstract": "It is expected that the extreme mass accretion rate onto strongly magnetized neutron stars results in the appearance of accretion columns above the stellar surface. For a distant observer, rotation of a star results in periodic variations of X-ray flux. Because the mass accretion rate fluctuates around the average value, the pulse profiles are not stable and demonstrate fluctuations as well. In the case of bright X-ray pulsars, however, pulse fluctuations are not solely attributed to variations in the mass accretion rate."
+    },
+    {
+      "openalex_id": "W2000089589",
+      "title": "A turbulent model of time variability in X-ray binary pulsars",
+      "year": 1993,
+      "doi": "10.1086/186917",
+      "cited_by": 26,
+      "oa_status": "closed",
+      "source": "The Astrophysical Journal",
+      "volume": "411",
+      "issue": null,
+      "pages": "L79",
+      "authors": [
+        {"name": "M. Hoshino", "openalex_id": "A5021961795"},
+        {"name": "Toshiaki Takeshima", "openalex_id": "A5110246585"}
+      ],
+      "abstract": "It is found that the observed power spectral density of the aperiodic time variability of the X-ray pulsar can be approximated by a power-law spectrum which changes its slope at the pulsation frequency (pulsar rotation frequency). The indices of the observed spectra are, respectively, 1.4-2.0 above the pulsation frequency and 0-1.0 below the pulsation frequency."
+    },
+    {
+      "openalex_id": "W1994106285",
+      "title": "Magnetically Driven Precession of Warped Disks and Millihertz Variabilities in Accreting X-Ray Pulsars",
+      "year": 2002,
+      "doi": "10.1086/324548",
+      "cited_by": 45,
+      "oa_status": "bronze",
+      "source": "The Astrophysical Journal",
+      "volume": "565",
+      "issue": "2",
+      "pages": "1134-1140",
+      "authors": [
+        {"name": "Akiko Shirakawa", "openalex_id": ""},
+        {"name": "Dong Lai", "openalex_id": ""}
+      ],
+      "abstract": "The inner region of the accretion disk around a magnetized neutron star is subjected to magnetic torques that induce warping and precession of the disk. These torques arise from interactions between the stellar field and the induced electric currents in the disk. We carry out a global analysis of warping/precession modes in a viscous accretion disk and show that under a wide range of conditions typical of accreting X-ray pulsars, the magnetic warping torque can overcome viscous damping and make the mode grow."
+    },
+    {
+      "openalex_id": "W253850377",
+      "title": "THE APERIODIC X-RAY VARIABILITY OF THE ACCRETING MILLISECOND PULSAR SAX J1808.4-3658",
+      "year": 2015,
+      "doi": "10.1088/0004-637x/806/1/90",
+      "cited_by": 22,
+      "oa_status": "bronze",
+      "source": "The Astrophysical Journal",
+      "volume": "806",
+      "issue": "1",
+      "pages": "90",
+      "authors": [
+        {"name": "Peter Bult", "openalex_id": "A5012323693"},
+        {"name": "Michiel van der Klis", "openalex_id": "A5048157801"}
+      ],
+      "abstract": "We have studied the aperiodic variability of the 401 Hz accreting millisecond X-ray pulsar SAX J1808.4-3658 using the complete data set collected with the Rossi X-ray Timing Explorer over 14 years of observation. The source shows a number of exceptional aperiodic timing phenomena that are observed against a backdrop of timing properties that show consistent trends in all five observed outbursts and closely resemble those of other atoll sources."
+    }
+  ]
+}

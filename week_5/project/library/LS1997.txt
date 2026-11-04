@@ -1,0 +1,788 @@
+[с. 1]
+arXiv:astro-ph/9609026v1  4 Sep 1996On the relationship between the periodic and aperiodic vari ability
+of accreting X–ray pulsars
+Davide Lazzati
+Osservatorio Astronomico di Brera
+Via E. Bianchi, 46 – 22055 Merate (Lecco), Italy
+and
+Universit` a degli Studi di Milano - sede di Como
+Via Lucini, 3 – 22100 Como, Italy
+E–mail: lazzati@merate.mi.astro.it
+Luigi Stella1
+Osservatorio Astronomico di Roma
+Via dell’Osservatorio, 2 – 00040 Monteporzio Catone (Roma), Italy
+E–mail: stella@coma.mporzio.astro.it
+1Aﬃliated to the International Center for Relativistic Astrophysics
+ABSTRACT
+Besides the narrow peaks originating from the periodic signal, the po wer
+spectra of accreting X-ray pulsars display continuum components usually
+increasing towards low frequencies; these arise from the source a periodic
+variability. Most studies so far adopted the view that the periodic an d aperiodic
+variations are independent. However any aperiodic variability in the e mission
+from the accretion column(s) towards the magnetic neutron star should be
+modulated at the X-ray pulsar period, by virtue of the same rotatio n-induced
+geometric eﬀects which give rise to the periodic signal. We develop her e a
+simple shot noise model to test the presence of a coupling between t he periodic
+and aperiodic variability of X-ray pulsars. The model power spectru m is ﬁt to
+the power spectra of three X-ray pulsars, Vela X-1, 4U 1145-62 a nd Cen X-3
+observed with EXOSAT. In the ﬁrst two cases we ﬁnd that a highly sig niﬁcant
+coupling is present, as testiﬁed by a substantial broadening in the w ings of the
+power spectrum peaks due to the periodic modulation. We ﬁnd also th at these
+wings can mimick the presence of a knee in the continuum power spect rum
+components around the fundamental of the periodic modulation, t herefore
+questioning the correlation reported by Takeshima (1992) betwee n the X-ray
+pulsar frequency and the knee frequency, beyond which the cont inuum power
+spectral component steepens.
+
+[с. 2]
+– 2 –
+Subject headings: X-rays: binaries — Pulsars — Stars: accretion — Stars:
+neutron — Stars: X-rays
+1. Introduction
+That fast aperiodic X-ray ﬂux variations are present in accreting m agnetic neutron
+stars became clear with the discovery of 4.4 s pulsations from V0332 +53, a transient
+X-ray binary that had tentatively been classiﬁed as a black hole cand idate based on the
+similarity of its short term variability to that of Cyg X-1 (Tanaka et al. 1983, Stella et al.
+1985, Makishima et al. 1990). A number of studies of the aperiodic va riations of X-ray
+pulsars has been carried out since. In most cases these studies ha ve relied upon power
+spectrum techniques in a way that parallels the application to non-pu lsating X-ray binaries.
+Continuum power spectrum components arising from the source ap eriodic variability are
+often identiﬁed, ﬁt to analytic models and used to characterise the short term variations in
+relation to other source properties (such as spectral or luminosit y state). These continuum
+power spectrum components provide also an important element for classiﬁcations across
+diﬀerent types of accreting X-ray sources (see e.g. van der Klis 19 95 and references therein).
+In addition to the narrow peaks originating from the periodic modulat ion, the power
+spectra of many X-ray pulsars show distinct noise component(s) in creasing towards low
+frequencies. In several of the slower wind-fed X-ray pulsars the power increases in a power
+law-like fashion down to the lowest frequencies sampled (usually 10−4−10−3Hz). Some of
+the faster disk-fed X-ray pulsars show instead a (nearly) ﬂat-to pped noise component at
+low frequencies which steepens above a knee at a frequency of νknee(Nagase 1989; Soong
+and Swank 1989). To date the most detailed and comprehensive stu dy of the power spectra
+of X-ray pulsars has been carried out by Takeshima (1992), based on Ginga observations.
+This author reports that a ﬂat-topped or a moderately steep nois e component is present
+in virtually all X-ray pulsars shortwards of the peak corresponding to the fundamental of
+the periodic modulation. In many cases the knee above which the pow er spectrum steepens
+lies close to the base of this peak, such that a strong correlation is f ound between the
+pulse frequency νpand the knee frequency νknee, centered around the relation νs≃νknee
+(Takeshima 1992).
+Several other continuum power spectrum features extending ov er a more limited range
+of frequencies (usually a decade or less) are observed in X-ray puls ars: these include broad
+bumps, wiggles and steep very low frequency excesses. Broad pow er spectrum peaks
+
+[с. 3]
+– 3 –
+testifying to the presence of quasi periodic oscillations have been c learly revealed in some
+cases, notably Cen X-3 (Nagase 1989; Soong and Swank 1989), EX O 2030+375 (Angelini
+et al. 1989), 4U 1626-67 (Shinoda et al. 1990) and A0535+262 (Fing er et al. 1996). The
+continuum power spectrum components of individual X-ray pulsars have been observed to
+change in relation to a variety of phenomena such as source ﬂux, or bital phase and spin-up
+versus spin-down (Angelini 1989; Angelini et al. 1989; Belloni & Hasin ger 1990a; Parmar et
+al. 1989).
+Most studies so far implicitly adopted the view that the periodic and ap eriodic
+variability of X-ray pulsars are independent, such that the light cur ves are given by the
+sum of the two corresponding signals; similarly the power spectra ar e given by the sum
+of the individual power spectra of the two signals (see e.g. Angelini e t al. 1989). On the
+other hand it is well known that X-ray pulsars generate their period ic signal by virtue
+of geometric eﬀects arising from the rotation-induced motion of th e accretion column(s)
+through which the inﬂowing material is funneled onto the magnetic po les of the neutron
+star. Any aperiodic variation in the emissivity of the accretion column (s) should therefore
+be modulated by the periodic signal as well. Accordingly, Makishima (19 88) suggested an
+approach in which the aperiodic variability of an X-ray pulsar is multiplied by (as opposed
+to summed to) the periodic modulation. The coupling between the ape riodic and periodic
+variations, if present, is expected to alter the shape of the power spectrum, due to the
+convolution of the corresponding Fourier transforms (see also Bu rderi et al. 1993).
+In this work, we develop a simple model for testing the presence of a coupling between
+the aperiodic variability of X-ray pulsars and their periodic signal. We a dopt a suitable
+shot noise model to work out analytically the expected power spect rum for an arbitrary
+coupling factor. The model power spectrum obtained in this way is th en ﬁt to the power
+spectra of several X-ray pulsars. In two out of three cases we ﬁ nd that a signiﬁcant coupling
+is present between the shots and the periodic signal, as testiﬁed by a substantial broadening
+in the wings of the power spectrum peaks arising from the periodic mo dulation. In these
+two cases the continuum power still increases shortwards of the p eriodic modulation peak(s)
+and the broad wings mimick the presence of a knee in the power contin uum close to νp. By
+analogy this suggests that also in other X-ray pulsars with extende d red noise components
+the power spectrum knee close to ∼νpmight be an artifact produced by the broad wings of
+the coherent modulation peak(s); therefore, the reported cor relation between νpandνknee
+appears to be questionable.
+Our paper is organised as follows: Section 2 describes the analytic sh ot noise model
+that we have developed; the application of this model to the power s pectra from the
+EXOSAT light curves of selected X-ray pulsars is described in Section 3; our results are
+
+[с. 4]
+– 4 –
+discussed in Section 4.
+2. The shot noise model
+Shot noise models provide a useful mathematical description of the accretion ﬂow
+inhomogeneities that are believed to generate the variability of accr eting compact stars
+(Terrell 1972; Weisskopf et al. 1975; Sutherland et al. 1978; Shiba zaki & Lamb 1987;
+Elsner et al. 1987; Abramowicz et al. 1991). Individual shots are of ten supposed to be
+representative of the emission from self-luminous blobs or clumps in t he accretion process.
+In the context of accreting X-ray pulsars, models involving density ﬂuctuations in the
+accreting plasma have been discussed by Burderi et al. (1993) and Hoshino & Takeshima
+(1993).
+We assume that the X-ray pulsar signal consists of two diﬀerent co mponents: (1) a
+deterministic periodic component:
+f1(t) =A+N∑
+n=1Bnsin(nω0t+φn),
+whereω0= 2π/Pis the fundamental of the pulsed signal of period P,Nthe number
+of its harmonics and φnthe corresponding phases; (2) an aperiodic component consisting
+of the superposition of a number of similar shots, which gives rise to t he red noise power
+spectra observed in most X-ray pulsars. In order to reproduce t he complex characteristics
+of the red spectra which are frequently observed (such as, e.g., d iﬀerent power law slopes in
+diﬀerent frequency ranges) most authors adopt a simple (usually e xponential) shot shape,
+and consider suitable distributions of shot amplitudes and decay time s (see e.g. Belloni
+and Hasinger 1990b and references therein). We adopt a somewha t complementary model
+in which all shots have the same shape and amplitude (described by th e envelope function
+g(t)), such that their superposition is given by
+˜f2(t) =∑
+jg(t−tj),
+wheretjis the (random) start time of the jthshot. This model is more easily handled
+analytically and yet yields model power spectra of arbitrary complex ity.
+If the aperiodic component is coupled to the periodic one, then f2is, at least in part,
+modulated by f1. Therefore we write
+
+[с. 5]
+– 5 –
+f2(t) =[
+1+C′
+AN∑
+n=1Bnsin(nω0t+φn)]
+˜f2(t),
+withC′a constant that controls the extent to which the periodic signal mo dulates the
+shots (the lower C′, the lower the modulation). In order to leave the ﬂuence of each sh ot
+unaﬀected (at least on average), we have divided the amplitude of t he deterministic function
+by its mean value A. Note that Acannot be derived directly from the mean value of the
+signal, since this comprises an additional term given by the mean of th e shots. Therefore we
+deﬁne a new constant, C=C′/A, which controls the degree of modulation but is inversely
+proportional to the mean signal. The CBiproducts provide a measurement of the depth of
+the shot modulation in each harmonics.
+The Fourier transform of the X-ray pulsar signal f∞(t) =f1(t)+f2(t) is therefore
+F∞(ω) =Aδ(ω)+N∑
+n=1Bn
+2ie−iωφn[δ(ω−nω0)−δ(ω+nω0)]+
++{
+δ(ω)+C
+2iN∑
+n=1Bne−iωφn[δ(ω−nω0)−δ(ω+nω0)]}
+∗{
+G(ω)∑
+je−iωtj}
+,
+whereG(ω) is the Fourier transform of the shot envelope function g(t).
+For practical applications, the power spectrum must be calculated by taking into
+account the eﬀects due to the binning, sampling and ﬁnite duration o f the light curves.
+Following van der Klis (1989) we describe a ﬁnite, equispaced and binne d light curve as
+(“*” indicates a convolution)
+f(t) ={[f∞(t)w(t)]∗b(t)}s(t), (1)
+whereb(t) is the binning function, s(t) the sampling function (a monodimensional lattice)
+andw(t) the window function. By using the convolution theorem, the Fourie r transform
+F(ω) off(t) writes
+F(ω) = 2π{[F∞(ω)∗W(ω)]B(ω)}∗S(ω), (2)
+where the Fourier transforms of w(t) andb(t) are, respectively,
+
+[с. 6]
+– 6 –
+W(ω) =T
+2πsinc(T
+2ω)
+∼δ(ω)
+B(ω) =∆t
+2πsinc(∆t
+2ω)
+,
+where sinc( x) =sin(x)
+x.S(ω) is the reciprocal lattice. Tand ∆tindicate, respectively, the
+light curve duration and its binning time. Note that in Eq. 2 we have use d the normalisation
+F(ω) =1
+2π∫
+Rf(t)e−iωtdt .
+The convolution with S(ω) in Eq. 2 can be neglected, as the aliasing introduced by the
+sampling is depressed by the sinc due to the binning. Moreover the ob served power spectra
+(see Section 3) are often dominated by the counting statistics nois e well before the Nyquist
+frequency, such that the low signal to noise further reduces the possibility of detecting any
+alias. The expression for F∞(ω) in Eq. 2 can be simpliﬁed by neglecting the δ-functions
+centered on negative frequencies. Therefore for F(ω) we obtain
+F(ω) =∆t
+2πsinc(∆t
+2ω){
+ATsinc(T
+2ω)
++T
+2iN∑
+n=1Bne−inω0φnsinc[T
+2(ω−nω0)]
++
++2π{
+G(ω)∑
+je−iωtj+C
+2iN∑
+n=1[
+Bne−inω0φnG(ω−nω0)∑
+je−i(ω−nω0)tj]}}
+,(3)
+whereW(ω) was approximated with a δ-function in the convolution with G, since the shot
+decay time is supposed to be much shorter than the observation du rationT(such that
+G(ω) is much wider than W(ω)).
+The ﬁnal step is to calculate the power spectrum P(ω). As usual, the simple deﬁnition
+P(ω) =|F(ω)|2cannot be adopted as it would include a strong dependence on the sh ot
+start times. Instead the deﬁnition
+P(ω) =<|F(ω)|2> (4)
+must be used, where the brackets indicate the average over the e nsemble of realisations
+of signals with the same deterministic periodic component and shot pa rameters, but with
+diﬀerent {tj}. The derivation of P(ω) is quite complex, and is described in the Appendix.
+The result is
+
+[с. 7]
+– 7 –
+(a)P(ω)≃∆t2
+4π2sinc2(
+∆t
+2ω){
+T2(A+¯E)2sinc2(
+T
+2ω)
++
+(b) +T2
+4∑N
+n=1B2
+nsinc2[
+T
+2(ω−nω0)]
++
+(c) +4 π2Tν[
+|G(ω)|2+C2
+4∑N
+n=1B2
+n|G(ω−nω0)|2]
++
+(d) + C2π2(T2ν2−Tν)∑N
+n=1B2
+n|G(ω−nω0)|2sinc2[
+T
+2(ω−nω0)T]
++
+(e) +2 π2T2νC∑N
+n=1B2
+n|G(ω−nω0)|2sinc2[
+T
+2(ω−nω0)T]}
+,(5)
+whereνis the shot rate, and ¯Ethe mean power in the shot component. It is worth
+emphasising that the formula above is derived under the assumption that the observation
+duration Tis long enough that the cross-terms resulting from the relative pha ses in the
+harmonics of the periodic signal can be neglected (see the Appendix ). The validity of
+this assumption is veriﬁed a posteriori in the application to the observed power spectra of
+selected X-ray pulsars presented in Section 3.
+Besides the multiplicative term due to the binning, the right hand side o f Eq. 5
+comprises four additive terms; these are, respectively:
+(a) The term arising from the average level of the total signal, i.e. t he deterministic
+periodic signal plus the shot noise. This term is sharply peaked aroun d zero frequency.
+(b) The term containing the narrow peaks (width of ∼1/T) due to the Nharmonics
+of the deterministic periodic signal.
+(c) A term consisting of the sum of the red noise spectrum due to th e shots’ envelope
+(|G(ω)|2) plus broad wings (width of ∼1
+τ, whereτis the characteristic decay–time of the
+shots) centered around each narrow peak. These broad wings ar e characterised by the same
+functional form of the red noise spectrum on both sides of each pe ak. They arise from the
+convolution of the deterministic signal peaks with the red noise comp onent due to the shots.
+(d) An additional term contributing to the narrow peaks (width of ∼1/T) centered
+around the harmonics. This term is due to the fact that the modulat ion of all shots is in
+phase with respect to the deterministic periodic signal. In principle th is contribution to the
+narrow peaks could be distinguished from that due to the determinis tic narrow peaks (term
+b) by virtue of the dependence on the shot rate ν.
+(e) A term, contributing to the narrow peaks’ amplitude, which aris es from the cross
+product in the calculation of the squared modulus of the two terms in Eq. 3. Its amplitude
+is a factor of ∼Cνlower than term d.
+
+[с. 8]
+– 8 –
+Within our model the presence of broad wings around the peaks (se e termc)
+unambiguously indicates that the shots are modulated by the period ic signal, such that
+a coupling is present. Note that the functional form of the broad w ings is dictated by
+the red noise component, such that the modelling of the wings (that usually have a poor
+signal to noise ratio) is coupled to the modelling of the red noise compo nent. It should be
+emphasized that no assumption is yet made about envelope function of the shots.
+The possibility of revealing a modulation of the shots through the bro ad wings of
+the narrow peaks depends crucially on the ratio of the pulsar period to the characteristic
+decay time τof the shots. To illustrate this point we show in Fig. 1 the model power
+spectra obtained for shots with exponential envelope function an d decay–time τ= 300 s.
+The diﬀerent curves correspond to 50% modulated shots with a sinu soidal signal of period
+P= 236,471,942,1885,3770 s, respectively. It is apparent that when 2 πP>∼τthe wings
+are so broad that they become virtually indistinguishable from the re d noise. This is due to
+the fact that the shots are too short-lived to display a conspicuou s periodic modulation.
+3. Application to the Power Spectra of selected X-ray Pulsar s
+3.1. Fitting procedure
+In order to test the coupling between the periodic and aperiodic var iability, we used
+the model power spectrum in Eq. 5 to ﬁt the power spectra obtaine d from the X-ray light
+curves of a few selected X-ray pulsars. The relevant formula was in serted in the QDP/PLT
+ﬁtting program (Tennant 1981), which provides a nonlinear least sq uare ﬁtting based on
+the Marquandt method. A constant term was added to account fo r the presence of counting
+statistics (white) noise in the power spectra.
+We used the [4–9] keV light curves of X-ray pulsars obtained with the EXOSAT
+Medium Energy detector array, in consideration of their high statis tical quality and (near)
+absence of interruptions (White and Peacock 1988). The data wer e extracted from the High
+Energy Astrophysics Database System at the Brera Astronomica l Observatory (Tagliaferri
+& Stella 1993, 1994, see also White et al. 1995a). For each source a p ower spectrum was
+calculated over a number of separate observation intervals of the same length. For each
+interval we checked that: (a) the source count rate was approx imately at the same level; (b)
+the light curves did not contain eclipses, absorption dips or other no n-stationary events; (c)
+the position of the narrow peaks due to the periodic pulsar signal wa s the same to within
+the Fourier resolution 1 /Tof the power spectra (such that the smearing due to the orbital
+Doppler eﬀect and secular period derivative could be neglected).
+
+[с. 9]
+– 9 –
+As customary, we calculated the power spectra of each interval a fter subtracting the
+average count rate, such that the contribution of term ain Eq. 5 can be neglected and the
+term itself excluded from the ﬁt. These power spectra were then u sed to produce an average
+power spectrum for each X-ray pulsar. The statistical error of t he power estimates was
+evaluated based on the standard deviation of the average power f or each Fourier frequency.
+Note that the interval duration was determined by compromising be tween two conﬂicting
+requirements: that the intervals are long enough to investigate th e low frequency end of
+the red-noise and that their number is high enough (we averaged a n umber of 7 to 13
+individual spectra) to make the distribution of the power estimates in the average power
+spectrum close to a Gaussian distribution (as required to apply stan dard least square ﬁtting
+techniques, see e.g. Israel & Stella 1996 and references therein) .
+In the EXOSAT database we identiﬁed three X-ray pulsars, with obs ervations meeting
+the above requirements. These are Vela X-1 ( P= 282.6 s), 4U1145-62 ( P= 292.1 s) and
+Cen X-3 ( P= 4.8 s) (see e.g. Nagase 1989; White et al. 1995b and references ther ein).
+Details of the relevant observations are given in Table 1, together w ith the interval length
+and binning time adopted in our analysis.
+The ﬁtting procedure for the average power spectrum of each X- ray pulsar consists of
+three steps.
+(i) First we ﬁt our model under the hypothesis that no coupling is pre sent between the
+deterministic periodic signal and the shots. This is obtained by settin gC= 0. Consequently
+termsdandeand the 2nd part of term cof Eq. 5 are excluded from the ﬁt. Therefore this
+case includes only the red noise component and the “narrow peaks” (under the assumption
+that the eﬀects of the relative phases between the harmonics can be neglected). For |G(ω)|2
+we ﬁnd that a King-like model of the form
+|G(ω)|2=D[
+1+(ω
+ωc)2]−α
+(6)
+reproduced quite accurately the power law-like behaviour and the lo w frequency ﬂattening
+that characterizes the red noise spectra we analysed.
+(ii) The model used in step (i) is generalised to include the eﬀects due t o the relative
+phases between the harmonics. The relevant formula is given by Eq. 11 in Angelini et al.
+(1989). This step is designed to provide an a posteriori check of the assumptions under
+which Eq. 5 has been derived.
+(iii) In the third step the model that includes the coupling between th e periodic signal
+and the red noise is used. In this case the coupling constant Cof Eq. 5 is used as a free
+
+[с. 10]
+– 10 –
+parameter in the ﬁt. The only contribution to the broad peak wings d erives from the
+second part of term cin Eq. 5. Note that the shape of the broad wings depends on |G(ω)|2,
+which in turn is mainly determined by the shape of the red noise. In pra ctical applications
+of Eq. 5, it is found that the signal to noise of the observed power s pectra is insuﬃcient
+to isolate the contribution to the narrow peaks deriving also from te rmsdandeof Eq. 5.
+Therefore we carry out the ﬁt by neglecting these two terms. In t his approach the shot
+rate cannot be obtained directly from the ﬁt to the power spectru m. Moreover the value
+ofC, which is related to the ratio between the height of the narrow peak and broad wing
+component, is underestimated. This is because, by neglecting term sdandein Eq. 5, the
+height of the narrow peaks is attributed only to the deterministic co mponent. A value of C
+signiﬁcantly diﬀerent from zero would nevertheless reveal the pre sence of a coupling.
+3.2. Vela X-1
+The average power spectrum of Vela X-1 obtained from the 4-9 keV EXOSAT light
+curves is shown in Fig. 2. The ﬁt obtained under the hypothesis of no coupling (step i)
+is shown in the upper panel of Fig. 2, while the corresponding residua ls are shown in the
+lower panel. The ﬁt to the red noise provides a King model index of α≃0.58, whereas the
+break frequency νc=ωc/2πwas too low to be measured. The ﬁt included the ﬁrst eleven
+harmonics of the pulse frequency νp= (3.5379±0.0007)×10−3Hz. The corresponding χ2
+is 325.9 for 189 degrees of freedom (hereafter dof). It is apparent that the peak wings are
+not well modelled. Including the eﬀects of the relative phases betwe en the harmonics (step
+ii) left the best ﬁt and corresponding χ2(=323.3) virtually unaﬀected, while the number of
+dofdecreased to 180. An F-test for the addition of 9 free parameter s, conﬁrmed that the
+improvement of the ﬁt is not signiﬁcant.
+Having checked that the relative phases between the harmonics ca n be neglected, we
+proceeded to step iiiby allowing for a periodic modulation of the shots (the coupling
+constant Cis now treated as a free parameter). A much better ﬁt is obtained in this case
+withχ2/dof= 229.3/188. This corresponds to an F-test chance probability of <10−15for
+the addition of one free parameter with respect to the ﬁt of step i. Fig. 2(b) shows that
+the new ﬁt reproduces far more accurately the broad wings of the peaks. For the red noise
+component, the new ﬁt provides a break frequency of νc= (2.0±1.3)×10−4Hz << ν pand
+a King model index of α= 0.72±0.05 (errors are 90% conﬁdence). The products CBn
+of the coupling constant and the harmonics’ amplitude obtained fro m the ﬁt are given in
+Table 2.
+It is useful to deﬁne a parameter R=C∑N
+n=1Bnwhich is related to the degree of
+
+[с. 11]
+– 11 –
+modulation of the pulse. In the case of a sinusoidal signal, Rrepresents the relative depth
+of the periodic modulation of the shots. For a periodic signal contain ing more than one
+harmonics, the shape of the shot modulation cannot be reconstru cted due to the absence
+of information about the relative phases of the harmonics. Conseq uentely in this case R
+does not measure the relative modulation of the shots and values of R >1 can be obtained.
+Nevertheless the value of Rprovides an indication of whether the shots are weakly ( R≪1)
+or strongly ( R≈1) modulated. For Vela X-1 we ﬁnd a large value of R= 3.2±0.2, pointing
+to a large amplitude of the shot modulation.
+3.3. 4U1145-62
+The average power spectrum of 4U1145-62 was obtained from the X-ray light curves of
+separate EXOSAT observations, since no single long observation wa s available (cf. Table 1).
+The ﬁt obtained under the hypothesis of no coupling between the pe riodic and the red noise
+(stepi) is shown in the upper panel of Fig. 3(a). The ﬁrst ﬁve harmonics of the pulsar
+modulation at νp= (3.4229±0.0006)×10−3Hz were included in the ﬁt. Note that in this
+case the red-noise component extends in a power law fashion down t o the lowest frequencies
+sampled in the power spectrum ( α= 0.41±0.02), such that only an upper limit to the
+break frequency νc<∼10−4Hz could be obtained. This frequency is ≪νp, like in the case of
+Vela X-1. For step iand step iiﬁts aχ2of 299 was obtained, respectively for 189 and 180
+dof. Therefore also in this case the eﬀects of the relative phases betw een the harmonics are
+negligible. When the coupling constant Cwas allowed to vary (step iii) we ﬁnd a χ2/dofof
+275/188; correspondigly the F-test chance probability for the ad dition of one free parameter
+relative to the step iﬁt was found to be ∼3×10−5. Therefore we conclude that also in the
+case of 4U1145-62 the shots are modulated. The values of CBnare given in Table 2, while
+forRwe derive a value of 1 .6±0.2.
+3.4. Cen X-3
+The power spectrum of the EXOSAT light curves of Cen X-3 is diﬀeren t from the
+two cases presented above in that the red noise component shows a clear ﬂattening for
+frequencies shorter than the fundamental of the periodic modula tion (see Fig. 4), implying
+that the shot duration is comparable to the X-ray pulsar period. Un der these circumstances,
+any modulation of the shots with the periodic signal would give rise to s uch broad wings
+around the power spectrum peaks, that they would be hardly distig uishable from the red
+noise itself (see Section 2). We conﬁned our analysis of the power sp ectrum of Cen X-3 to
+
+[с. 12]
+– 12 –
+the range of frequencies between 0.02 and 0.8 Hz, such that the Kin g-like model of Eq. 6
+provided a reasonably accurate ﬁt of the red-noise component. T he ﬁrst three harmonics of
+the periodic modulation at νp= (2.0692±0.0008)×10−1Hz were included in the ﬁt.
+Under the hypothesis of no coupling, the ﬁt (step i) gives a χ2/dofof 2108/1589, for
+α= 0.43±0.03 andνc= 1.2±0.1 Hz. The step iiﬁt produced the same χ2, for 1580 dof;
+the eﬀects of the relative phases between harmonics are therefo re negligible also in the case
+of Cen X-3. Allowing for a periodic modulation of the shots (step iii) yielded a ﬁt with a
+χ2of 2108, for 1588 dof. This shows that no broad wings are detected around the peaks in
+the case of Cen X-3 (see Table 2 for upper limits on the CBn). Note however that since the
+expected shape of the wings is dictated by the shape of the red-no ise (see above), only a
+poor upper limit is found for R(<∼0.66 at the 90% conﬁdence level). This indicates that a
+fairly strong coupling between the periodic and aperiodic variability mig ht be present and
+remain undetected in Cen X-3.
+4. Discussion
+Based on a simple model consisting of the sum of a periodic signal plus r andom shots
+characterised by an arbitrary degree of modulation with the period ic signal, we have shown
+that in two out of three X-ray pulsars that we have analysed (Vela X -1 and 4U1145-62)
+there exists a strong coupling between the periodic and red noise va riability. This coupling
+is revealed through the broad wings that are found around the pow er spectrum peaks
+arising from the periodic X-ray pulsar signal. As the shape of the red noise component
+dictates the shape of the broad wings, these are more easily detec ted when the red noise
+power increases shortwards of the pulsar frequency νp. This is indeed the case for Vela X-1
+and 4U1145-62. On the contrary, the red noise component of Cen X-3 ﬂattens around νp,
+such that any wings would be so broad that they are very diﬃcult to s eparate from the
+red-noise component. We ﬁnd no evidence for such very broad wing s around the power
+spectrum peaks of Cen X-3; the corresponding upper limit to the mo dulation of the shots
+is poor and still allows for a relatively strong coupling. This is likely the ca se also in
+other disk-fed X-ray pulsars that show unambiguously a ﬂat-topp ed red noise component
+steepening above frequencies of>∼νp.
+Our results therefore suggest that a coupling between the period ic and red noise
+variability might be frequently present in X-ray pulsars. This is not a s urprising result
+as one would expect that any accretion ﬂow inhomogeneity (or “sho t”) responsible for
+the red noise, produces most of its X-ray luminosity in the accretion column close to the
+neutron star surface. The combination of rotation and radiative t ransfer eﬀects should
+
+[с. 13]
+– 13 –
+therefore produce a periodic modulation of the shots similar to that of any continuum X-ray
+accretion onto the polar caps. If, as assumed in our model, the mod ulation across diﬀerent
+shots is phase coherent, then narrow power spectrum peaks are also generated by the shot
+component (see Section 2). One might speculate that the whole X-r ay ﬂux is produced
+by the superposition of random modulated shots ( i.e.no deterministic periodic signal is
+present). To ascertain whether this is the case is beyond the scop e of the present paper.
+There is also an interesting consequence of our work concerning th e correlation between
+the pulsar frequency and the knee frequency in the power spectr um continuum that was
+reported by Takeshima (1992). It is apparent from the power spe ctrum of Vela X-1 in
+Fig. 2 that the broad wings around the peaks might mimic the presenc e of a break in the
+red noise component around νp. To address this point in a quantitative fashion we adopted
+the power spectrum model used by Takeshima (1992). This compris es the sum of: (a)
+the narrow peaks from the periodic component; (b) a power law; (c ) a ﬂat component
+followed by a power law above a knee frequency νknee. The ﬁt to the power spectrum
+of Vela X-1 obtained in this way is given in the upper panel of Fig. 5, sho wing also the
+separate contributions from the three model components. A valu e ofχ2/dofof 297/186
+was obtained; this is considerably worse than the ﬁt based on our mo dulated shot noise
+model (χ2/dof= 229/188). The bottom panel of Fig. 5 shows also the latter ﬁt, with the
+separate contributions from the red noise, the narrow peaks and the broad wings. It is
+apparent that the broad wings provide a much more accurate ﬁt of the power spectrum in
+between the narrow peaks. We conclude that the red noise power s pectrum of Vela X-1
+shows no evidence of a knee around νp. A similar conclusion, though with a lower statistical
+signiﬁcance, is reached also for the power spectrum of 4U 1145-62 . In this case we obtained
+aχ2/dofof 299/189, 284/186 and 272/188 for the step (i) ﬁt, the Takesh ima model and
+the step (iii) ﬁt, respectively.
+By analogy, this suggests that also for other X-ray pulsars with re d noise components
+increasing shortwards of νp, the broad wings resulting from the modulated shots might
+mimick the additional component with a knee at νknee∼νpthat was introduced by
+Takeshima (1992). Therefore this component is probably not requ ired and a red noise knee,
+if present, would be at νknee≪νp. On the other hand, the case of Cen X-3 is probably
+typical of those X-ray pulsars for which the red noise ﬂattens inde ed below frequencies of
+νknee>∼νp; any broad wings would be (nearly) undetectable and their contamin ating eﬀect
+on the power spectrum continuum negligible. The discussion above ind icates that, if the
+power spectrum model does not include the broad wings around the periodic modulations
+peaks, a bias towards the νknee∼νprelation is likely introduced.
+This is but an example of the caution that should be used in isolating the continuum
+
+[с. 14]
+– 14 –
+power spectrum components that arise onlyfrom the aperiodic variability of X-ray pulsars.
+Indeed the peaks’ broad wings originating from the coupling of the p eriodic and aperiodic
+variability, if not adequately modelled, can lead to inaccurate conclus ions concerning the
+shape, amplitude and frequency range of the continuum power spe ctrum components. A
+systematic reanalysis of the Ginga power spectra of X-ray pulsars should be carried out
+in the light of our present work. Valuable new information should deriv e from the X-ray
+pulsar power spectra that are being obtained by the RXTE.
+LS acknowledges useful discussions with L. Angelini. This work was pa rtially supported
+through ASI grants.
+
+[с. 15]
+– 15 –
+A. Appendix
+The derivation of Eq. 5 begins with the application of deﬁnition 4 to Eq. 3. By
+averaging over the ensemble of diﬀerent realisations of the shots s tart times {tj}, we obtain:
+P(ω) =∆t2
+4π2sinc2(∆t
+2ω)⣨⏐⏐⏐⏐⏐ATsinc(T
+2ω)
++T
+2iN∑
+n=1Bne−inω0φnsinc[T
+2(ω−nω0)]
++
++2π{
+G(ω)∑
+je−iωtj+C
+2iN∑
+n=1[
+Bne−inω0φnG(ω−nω0)∑
+je−i(ω−nω0)tj]}⏐⏐⏐⏐⏐2⟩
+.
+AsTω0is≫1, the interference terms between diﬀerent harmonics can be neg lected. In this
+limit the sinc function is approximated by a δ-function. A consequence of this is that also
+the relative phases between the harmonics are neglected. As desc ribed in Section 3, this
+assumption is veriﬁed a posteriori in the ﬁtting procedure. We therefore obtain:
+(a)P(ω) =∆t2
+4π2sinc2(
+∆t
+2ω){
+A2T2sinc2(
+T
+2ω)
++T2
+4∑N
+n=1B2
+nsinc2[
+T
+2(ω−nω0)]
++
+(b) +4 π2⣨⏐⏐⏐⏐G(ω)∑
+je−iωtj+C
+2i∑N
+n=1[
+Bne−inω0φnG(ω−nω0)∑
+je−i(ω−nω0)tj]⏐⏐⏐⏐2⟩
++
+(c) +4 πATsinc(
+T
+2ω)
+Re[
+G(ω)<∑
+je−iωtj>]
++
+(d) + πTC∑N
+n=1B2
+ncos(nω0φn)sinc[
+T
+2(ω−nω0)]
+Re[
+e−inω0φnG(ω−nω0)<∑
+je−i(ω−nω0)tj>]
++
+(e) + πTC∑N
+n=1B2
+nsin(nω0φn)sinc[
+T
+2(ω−nω0)]
+Im[
+e−inω0φnG(ω−nω0)<∑
+je−i(ω−nω0)tj>]}
+.
+(A1)
+Note that the cross products in term bcannot be neglected because of the considerable
+width of G(ω). However it can be shown that these cross products cancel eac h other exactly
+over the ensemble average. Term A1 bbecomes
+4π2{
+|G(ω)|2<|∑
+je−iωtj|2>+C2
+4N∑
+n=1[
+B2
+n|G(ω−nω0)|2<|∑
+je−i(ω−nω0)tj|2>]}
+.
+In order to calculate <|∑
+je−iαθj|2>, we separate real and imaginary parts of the sum and
+work out the ensemble average separately. We obtain
+<⏐⏐⏐∑
+je−iαθj⏐⏐⏐2>=N+(N2−N)(<cosαθj>2+<sinαθj>2).
+Note that, unlike the case of a random walk, the second terms beco me very large close to
+the resonance condition α= 0 (i.e. ω=nω0in Eq. A1). If the mean over the ensemble is
+
+[с. 16]
+– 16 –
+equal to the mean over time (i.e. the system is ergodic), we have
+< f >=¯f=1
+T∫T
+2
+−T
+2f(t)dt ,
+and
+<⏐⏐⏐∑
+je−iαθj⏐⏐⏐2>=N+(N2−N)sinc2(αT
+2)
+.
+Term A1 btherefore becomes:
+4π2Tν[
+|G(ω)|2+C2
+4N∑
+n=1B2
+n|G(ω−nω0)|2]
++
+π2C2(T2ν2−Tν)N∑
+n=1B2
+nsinc2((ω−nω0)T
+2)
+|G(ω−nω0)|2.
+Term A1 crepresents the contribution of the shot average to the zero fre quency power,
+while terms A1 dand A1eare simpliﬁed in a manner similar to A1 b. We ﬁnally obtain Eq. 5.
+
+[с. 17]
+– 17 –
+REFERENCES
+Abramowicz, M., Bao, G., Lanza, A. & Zhang, X. H. 1991, A&A, 245, 4 54
+Angelini, L. 1989 in Proc. 23rd ESLAB Symp. on Two Topics in X-Ray Ast ronomy Eds. J.
+Hunt & B. Battrick (ESA SP-296, Noordwijk, NL), p.81
+Angelini, L., Stella, L. & Parmar, A.N. 1989, ApJ 346, 906
+Belloni, T. & Hasinger, G. 1990a, A&A 230, 103
+Belloni, T. & Hasinger, G. 1990b, A&A 227, L33
+Burderi, L., Robba, N. R. & Cusumano, G. 1993, Adv. Sp. Sc. 13, 29 1
+Elsner, R. F., Shibazaki, N. & Weisskopf, M. C. 1987 ApJ 320, 527
+Finger, M. H., Wilson, R. B. & Harmon, B. A. 1996, ApJ, 459, 288
+Hoshino, M. & Takeshima, T. 1993, ApJ, 411, L79
+Israel, G. L. & Stella, L., 1996, ApJ, in press
+Makishima, K. 1988 in Physics od Neutron Stars and Black Holes , Ed. Y. Tanaka (Universal
+Academy Press, Tokyo), p.175
+Makishima, K. et al. 1990, PASJ 42, 295
+Nagase, F. 1989 in Proc. 23rd ESLAB Symp. on Two Topics in X-Ray As tronomy Eds. J.
+Hunt & B. Battrick (ESA SP-296, Noordwijk, NL), p. 45
+Parmar, A.N., White, N.E., Stella, L., Izzo, C. & Ferri, P. 1989 ApJ 338, 359
+Shibazaki, N. & Lamb, F.K. 1987 ApJ 318, 767.
+Shinoda, K., Kii, T., Mitsuda, K., Nagase, F., Tanaka, Y., Makishima, K., & Shibazaki, N.
+1990, PASJ 42, L27
+Soong, Y. & Swank, J. H. 1989 in Proc. 23rd ESLAB Symp. on Two Top ics in X-Ray
+Astronomy Eds. J. Hunt & B. Battrick (ESA SP-296, Noordwijk, NL ), p. 617
+Stella, L., White, N. E., Davelaar, J., Parmar, A.N., Blisset, R.J. & van de r Klis, M. 1985,
+ApJL 288, L45.
+Sutherland, P.G., Weisskopt, M.C. & Kahn, S.M. 1978 ApJ 219, 1029
+
+[с. 18]
+– 18 –
+Tagliaferri, G. & Stella, L. 1993, Mem. Soc. As. It. 64, 1075
+Tagliaferri, G. & Stella, L. 1994, Proc. ESO-OAT Workshop n.50 Handling and Archiving
+Data from Ground-Based Telescopes , Ed. M. Albrecht & F. Pasian (ESO, Garching),
+P.203
+Takeshima, T. 1992, PhD thesis, University of Tokyo
+Tanaka, Y. et al. 1983, IAU Circ. 3891
+Tennant, A. F. 1991 NASA Technical Mem. 4301 (NASA, Washington )
+Terrell, N. J. 1972 ApJ 174, L35
+van der Klis, M. 1989 in Timing Neutron Stars , Eds. H. ¨Ogelman & E. P. J. van den Heuvel,
+NATO ASI Series C 262 (Kluwer, Dordrecht), p.27
+van der Klis, M. 1995, in X-ray Binaries , Eds. W. H. G. Lewin, J. van Paradijs & E. P. J.
+van den Heuvel (Cambridge University Press), p.252
+Weisskopf, M. C., Kahn, S. M. & Sutherland P.G. 1975, ApJ 199, L147
+White, N. E. & Peacock, A. 1988, Mem. Soc. As. It. 59, 7
+White, N. E. et al. 1995a in Information and On-Line Data in Astronomy , Ed. D. Egret &
+M. Albrecht (Kluwer, Dordrecht), p.139
+White, N.E., Nagase, F. & Parmar, A.N. 1995b, in X-ray Binaries , Eds. W. H. G. Lewin,
+J. van Paradijs & E. P. J. van den Heuvel (Cambridge University Pre ss), p.1
+This preprint was prepared with the AAS L ATEX macros v4.0.
+
+[с. 19]
+– 19 –
+Table 1: EXOSAT ME Observations
+Name Time Seq. Exposure Count RateaNintbTint∆t
+(yy.ddd) (s) (cts/s) (s) (s)
+Vela X-1 85.044 1402 37341 73 .2 7 5120 5
+4U1145-62 85.001 1324 34000 42 .0 13 12400 10
+85.002 1326 21220 35 .1
+85.004 1329 24070 35 .0
+85.005 1332 23570 34 .8
+85.008 1339 25660 21 .1
+Cen X-3 85.193 1697 40685 315 .1 11 2048 0.5
+aNumber of intervals used to calculate the average power spectrum .
+bDuration of each interval.
+Table 2: Results from step iiiﬁts.
+Vela X-1 4U1145-62 Cen X-3
+R3.2±0.2 1.6±0.2<0.66
+CB10.61+0.13
+−0.110.79+0.17
+−0.17<0.37
+CB20.63+0.10
+−0.090.29+0.09
+−0.08<0.23
+CB30.10+0.03
+−0.030.07+0.03
+−0.02<0.06
+CB40.41+0.07
+−0.060.25+0.07
+−0.06 -
+CB50.44+0.07
+−0.060.17+0.05
+−0.05 -
+CB60.22+0.04
+−0.03 - -
+CB70.26+0.05
+−0.04 - -
+CB80.14+0.03
+−0.03 - -
+CB90.10+0.03
+−0.03 - -
+CB100.11+0.03
+−0.02 - -
+CB110.14+0.03
+−0.02 - -
+
+[с. 20]
+– 20 –
+Fig. 1.— Model power spectra (cf. Eq. (5)) for shots with an expon ential envelope function
+of decay time τ= 300 s. The shots are 50% modulated with a sinusoidal signal. Diﬀeren t
+curves corresponds to diﬀerent values of the period P; from the t op to the bottom this is
+236, 471, 942, 1885 and 3770 s. The adopted light curve duration a nd binning time were
+512000 s and 5 s, respectively. It is apparent that the width of bro ad wings below the sharp
+peak increases as P decreases.
+Fig. 2.— Average power spectrum obtained from the EXOSAT light cur ves of Vela X-
+1, together with the best ﬁt models obtained in the case of non-mod ulated shots (step i,
+panela) and modulated shots (step iii, panelb). The lower part of each panel shows the
+corresponding residuals.
+Fig. 3.— Average power spectrum obtained from the EXOSAT light cur ves of 4U 1145-
+62, together with the best ﬁt models obtained in the case of non-mo dulated shots (step i,
+panela) and modulated shots (step iii, panelb). The lower part of each panel shows the
+corresponding residuals.
+Fig. 4.— Average power spectrum obtained from the EXOSAT light cur ves of Cen X-3,
+together with the best ﬁt models obtained in the case of non-modula ted shots (step i) and
+modulated shots (step iii). In this case the two ﬁts are virtually identical. The lower part
+of the ﬁgure shows the corresponding residuals.
+Fig. 5.— Comparison between the best ﬁt to the average spectrum o f Vela X-1 obtained
+with model of Takeshima (panel a) and the modulated shot model (step iii, panelb). The
+contribution from the three components of each model is also plott ed. The lower part of
+each panel shows the corresponding residuals.
+
+[с. 21]
+
+
+[с. 22]
+
+
+[с. 23]
+
+
+[с. 24]
+
+
+[с. 25]
+

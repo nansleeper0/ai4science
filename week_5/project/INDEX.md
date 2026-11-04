@@ -1,0 +1,53 @@
+# INDEX.md — карта проекта
+
+- `AGENTS.md` — правила работы агента.
+- `STATUS.md` — текущее состояние и следующий шаг.
+- `diary.md` — история действий, проверок и принятых решений.
+- `data/measurements.csv` — учебные измерения Бойля; только чтение.
+- `src/build_pv.py::main` — вычисляет pV, медианные флаги suspicious, среднее чистых строк и сводку.
+- `src/build_pv.py::read_measurements` — читает исходный CSV.
+- `src/build_pv.py::median` — медиана для выделения подозрительных измерений.
+- `src/build_pv.py::sample_stdev` — выборочное стандартное отклонение чистых pV.
+- `src/analyze.py` — первая учебная обработка, сохранена как история.
+- `checks/check.py` — независимая проверка pV; разрешён запуск, исходники агент не читает.
+- `results/pv.csv` — произведения pV и флаги по строкам.
+- `results/pv_summary.json` — готовая статистика чистых измерений.
+- `notebooks/agent_loop.ipynb` — выполненная практика агента и своя задача.
+- `notebooks/METHOD.md` — методика своей задачи до запуска.
+- `journal.csv` — журнал собственной задачи notebook.
+- `cycle_table.md` — разбор одного цикла по окну, вызову и среде.
+- `paper/paper.pdf` — оригинал Mushtukov et al., 9 PDF-страниц.
+- `paper/SOURCE.md` — версия, происхождение и SHA-256 PDF.
+- `paper/METHOD.md` — методика полного окна и каскада.
+- `memory/L1.md` — пересказ трёх частей.
+- `memory/L2.md` — тезисы и самостоятельная сверка по PDF.
+- `memory/L3.md` — главный результат одной фразой.
+- `results/week3_article_full_context.md` — исходные ответы и статус полного окна.
+- `results/week3_answers_review.md` — самостоятельная сверка трёх ответов.
+- `results/week3_ab_METHOD.md` — методика сравнения одной инструкции.
+- `results/week3_ab.md` — фактические ответы двух запусков и вывод.
+- `results/week3_navigation.md` — проверка поиска нужной функции.
+- `prepare_week3_ab.py` — подготовка двух копий с одной разницей.
+- `verify_week3_local.py` — локальная проверка артефактов, не официальный checker курса.
+
+- `check_week4.py` — локальная проверка онтологии, графа, связей и задач недели 4; не исходный checker курса.
+
+- `ontology.yaml` — схема графа обзора: вопросы, классы, отношения, статусы и правила.
+- `ontology/` — заметки классов этой схемы.
+- `.obsidian/app.json` — показ файлов в хранилище.
+- `.obsidian/graph.json` — настройки графа обзора.
+- `library/catalog.csv` — два первоисточника, версии, локальные файлы и SHA-256.
+- `library/LS1997.pdf` — оригинальный препринт Lazzati & Stella, 25 PDF-страниц.
+- `library/LS1997.txt` — текст LS1997 с метками PDF-страниц.
+- `library/M2024.pdf` — оригинальный препринт Mushtukov et al., 9 PDF-страниц.
+- `library/M2024.txt` — текст M2024 с метками PDF-страниц.
+- `src/prepare_sources.py` — восстановление локальных источников по каталогу.
+- `src/make_class_notes.py` — генерация заметок классов по ontology.yaml.
+
+- `results/week5_openalex.json` — ответы и provenance пяти источников из OpenAlex.
+- `results/week5_wikidata.json` — запрос и ответ Wikidata по понятию X-ray pulsar.
+- `notes/Запрос 2026-11-04 OpenAlex пять источников.md` — заметка запроса OpenAlex.
+- `notes/Запрос 2026-11-04 Wikidata X-ray pulsar.md` — заметка запроса Wikidata (включая SELECT).
+- `notes/Источник Hoshino 1993.md`, `notes/Источник Shirakawa 2002.md`, `notes/Источник Bult 2015.md` — три новых источника.
+- `notes/<имя автора>.md` — заметки авторов (11) с типом Автор.
+- `reports/my_search_report.md` — личный отчёт пользователя о поиске (type: Отчёт, содержимое не изменено).

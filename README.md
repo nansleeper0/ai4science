@@ -34,7 +34,7 @@ python3 checks/check.py
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
-python -m pip install pypdf==6.11.0 PyYAML==6.0.3
+python -m pip install pypdf PyYAML
 
 python week_3/project/verify_week3_local.py
 (cd week_4/demo && python check_week4.py --strict)

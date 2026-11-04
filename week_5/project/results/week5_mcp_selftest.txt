@@ -1,0 +1,7 @@
+ключ OpenAlex: не задан (меньший суточный лимит)
+[OK]  openalex_search: {"openalex_id": "W1999977692", "title": "The Arrhenius Equation Revisited", "year": 2012, "authors": ["Micha Peleg", "Mark D. Normand", "Maria Grazia 
+[OK]  openalex_work: {"openalex_id": "W2052953969", "title": "The development of the Arrhenius equation", "year": 1984, "authors": [{"name": "Keith J. Laidler", "openalex_
+[OK]  wikidata_search: {"id": "Q507505", "label": "Уравнение Аррениуса", "description": "formula for the temperature dependence of reaction rates"}
+[OK]  wikidata_sparql: {"item": "http://www.wikidata.org/entity/Q507505", "itemLabel": "Уравнение Аррениуса"}
+
+Код проверки MCP: 0

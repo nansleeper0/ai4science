@@ -1,0 +1,49 @@
+{
+  "showAttachments": true,
+  "showOrphans": true,
+  "showArrow": true,
+  "colorGroups": [
+    {
+      "query": "path:ontology",
+      "color": {
+        "a": 1,
+        "rgb": 9474192
+      }
+    },
+    {
+      "query": "path:tasks",
+      "color": {
+        "a": 1,
+        "rgb": 16761685
+      }
+    },
+    {
+      "query": "[type:Модель]",
+      "color": {
+        "a": 1,
+        "rgb": 1153422
+      }
+    },
+    {
+      "query": "[type:Источник]",
+      "color": {
+        "a": 1,
+        "rgb": 5987296
+      }
+    },
+    {
+      "query": "[type:Проверка]",
+      "color": {
+        "a": 1,
+        "rgb": 14254635
+      }
+    },
+    {
+      "query": "path:reports",
+      "color": {
+        "a": 1,
+        "rgb": 5419488
+      }
+    }
+  ]
+}

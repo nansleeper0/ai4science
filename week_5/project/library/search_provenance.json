@@ -1,0 +1,21 @@
+{
+  "source": "OpenAlex",
+  "request": "https://api.openalex.org/works?search=X-ray+pulsar+variability&per_page=100&filter=has_abstract%3Atrue&select=id%2Cdoi%2Cdisplay_name%2Cpublication_year%2Ccited_by_count%2Cabstract_inverted_index",
+  "retrieved": "2026-11-04",
+  "topic": "X-ray pulsar variability",
+  "documents": 20,
+  "queries": [
+    "coupling between periodic and aperiodic variability in X-ray pulsars",
+    "broad wings around pulse frequency peaks in power spectra",
+    "accretion column eclipse phase resolved variability",
+    "Почему шумовая переменность зависит от фазы пульсаций?",
+    "Какие ограничения есть у моделей переменности EXO 2030+375?"
+  ],
+  "model_name": "intfloat/multilingual-e5-small",
+  "packages": {
+    "numpy": "1.26.4",
+    "torch": "2.7.1",
+    "sentence-transformers": "6.2.0",
+    "Pillow": "12.3.0"
+  }
+}

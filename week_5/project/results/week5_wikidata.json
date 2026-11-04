@@ -1,0 +1,26 @@
+{
+  "provenance": {
+    "source": "Wikidata",
+    "tool": "wikidata_search + wikidata_sparql",
+    "retrieved": "2026-11-04",
+    "note": "Понятие X-ray pulsar найдено через wikidata_search; SELECT выполнен через wikidata_sparql по найденному Q-ID."
+  },
+  "search": {
+    "query": "X-ray pulsar",
+    "language": "en",
+    "result": {
+      "id": "Q2979836",
+      "label": "X-ray pulsar",
+      "description": "pulsar which emits X-rays"
+    }
+  },
+  "sparql": {
+    "query": "SELECT ?item ?itemLabel ?instance ?instanceLabel WHERE {\n  wd:Q2979836 rdfs:label ?itemLabel .\n  wd:Q2979836 wdt:P31 ?instance .\n  SERVICE wikibase:label { bd:serviceParam wikibase:language \"en\". }\n}",
+    "found": 29,
+    "property": "P31 (instance of)",
+    "result": {
+      "Q2979836": "X-ray pulsar (pulsar which emits X-rays)",
+      "P31": "Q17444909 (astronomical object type)"
+    }
+  }
+}
