@@ -1,0 +1,5 @@
+method: pairwise two-point Arrhenius ratios within each series
+series: ['2024-01', '2024-02', '2024-04']
+n pairs: 30
+E_a mean = 51.582 kJ/mol (std 2.348)
+E_a median = 51.574 kJ/mol

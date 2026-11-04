@@ -1,0 +1,34 @@
+
+    __( O)>  ● new session · openai gpt://b1gi39jvrih75di87rqs/qwen3.6-35b-a3b/latest
+   \____)    20261101_4 · /home/artem/ai4science/week_1/project
+     L L     goose is ready
+
+
+Начинаю работу над проектом. Сначала изучу структуру и данные.
+  ────────────────────────────────────────
+  ▸ tree
+    path: /home/artem/ai4science/week_1/project
+    depth: 2
+
+
+  ────────────────────────────────────────
+  ▸ read_image
+    crop: {"height": 400, "width": 800, "x": 0, "y": 0}
+    source: https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Boyle%27s_Law.svg/800px-Boyle%27s_Law.svg.png
+
+Error: Tool approval required in non-interactive mode with GooseMode::approve. This is an invalid configuration — Approve/SmartApprove modes require an interactive terminal. Use GooseMode::Auto for headless sessions.
+
+  ─── AI4Science ───────────────────────────────────────────────
+    ИИ-ассистент исследователя
+    Инференс  →  Контекст  →  Верификация
+  ─────────────────────────────────────────────────────────────
+    Модель:    qwen3.6-35b-a3b/latest (Yandex AI Studio)
+    Контекст:  256k токенов, сжатие истории при 99k
+    Режим:     approve
+    Lean 4:    отключён
+    Бюджет:    941,908 / 3,000,000 токенов сегодня
+  ─────────────────────────────────────────────────────────────
+    Курс ШАД «ИИ-ассистенты для исследователя. AI4Science»
+    Модель:    /model <алиас> — qwen qwen235 deepseek gptoss junior
+    Команды:   /status  /mode <режим>  /plan <задача>  /compact  /help  /exit
+

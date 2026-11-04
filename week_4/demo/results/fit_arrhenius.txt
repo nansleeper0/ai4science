@@ -1,0 +1,8 @@
+series used: ['2024-01', '2024-02', '2024-04']
+n points: 15
+T range used: 298.15-343.15 K (25.0-70.0 C)
+slope b = -6213.580018 K
+intercept ln A = 14.780081
+E_a = 51.660 kJ/mol (se 0.390 kJ/mol)
+R^2 = 0.999259
+max |resid| = 0.047913
