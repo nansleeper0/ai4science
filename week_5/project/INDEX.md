@@ -51,3 +51,11 @@
 - `notes/Источник Hoshino 1993.md`, `notes/Источник Shirakawa 2002.md`, `notes/Источник Bult 2015.md` — три новых источника.
 - `notes/<имя автора>.md` — заметки авторов (11) с типом Автор.
 - `reports/my_search_report.md` — личный отчёт пользователя о поиске (type: Отчёт, содержимое не изменено).
+
+## Неделя 5 — исправление библиотеки и повтор сравнения поиска
+- `library/search_corpus_dedup.jsonl` — 20 работ (18 исходных + 2 добавленные: W2188719749, W2594250205).
+- `library/search_provenance_dedup.json` — provenance повторного поиска.
+- `library/search_response_full.json` — полный ответ прямого GET (100 записей).
+- `src/repeat_search_dedup.py` — воспроизводимый обработчик (BM25 + e5-small).
+- `results/week5_search_dedup.json` — выдачи и оценки.
+- `reports/my_search_report_dedup.md` — пять таблиц и сравнение с первоначальными результатами.

@@ -1,0 +1,171 @@
+{
+  "model_name": "intfloat/multilingual-e5-small",
+  "queries": [
+    "coupling between periodic and aperiodic variability in X-ray pulsars",
+    "broad wings around pulse frequency peaks in power spectra",
+    "accretion column eclipse phase resolved variability",
+    "Почему шумовая переменность зависит от фазы пульсаций?",
+    "Какие ограничения есть у моделей переменности EXO 2030+375?"
+  ],
+  "n_docs": 20,
+  "bm25": {
+    "k1": 1.2,
+    "b": 0.75
+  },
+  "retrievals": [
+    {
+      "query": "coupling between periodic and aperiodic variability in X-ray pulsars",
+      "bm25": [
+        {
+          "id": "W2016427691",
+          "title": "On the Relationship between the Periodic and Aperiodic Variability of Accreting X‐Ray Pulsars",
+          "score": 11.185720587882836
+        },
+        {
+          "id": "W2274579547",
+          "title": "Connecting the coherent and stochastic X-ray variability of accreting millisecond pulsars",
+          "score": 5.494542117580955
+        },
+        {
+          "id": "W253850377",
+          "title": "THE APERIODIC X-RAY VARIABILITY OF THE ACCRETING MILLISECOND PULSAR SAX J1808.4−3658",
+          "score": 4.37149429203105
+        }
+      ],
+      "vector": [
+        {
+          "id": "W2016427691",
+          "title": "On the Relationship between the Periodic and Aperiodic Variability of Accreting X‐Ray Pulsars",
+          "score": 0.9093204736709595
+        },
+        {
+          "id": "W2000089589",
+          "title": "A turbulent model of time variability in X-ray binary pulsars",
+          "score": 0.886149525642395
+        },
+        {
+          "id": "W1984285302",
+          "title": "Photometric Variability of Be/X-Ray Pulsar Binaries in the Small Magellanic Cloud",
+          "score": 0.8860159516334534
+        }
+      ]
+    },
+    {
+      "query": "broad wings around pulse frequency peaks in power spectra",
+      "bm25": [
+        {
+          "id": "W2016427691",
+          "title": "On the Relationship between the Periodic and Aperiodic Variability of Accreting X‐Ray Pulsars",
+          "score": 13.929646686139254
+        },
+        {
+          "id": "W2044775182",
+          "title": "The X-ray pulsar A0535 + 26 - Pulse profile and its time variability in hard X-rays",
+          "score": 7.738487468223539
+        },
+        {
+          "id": "W2000089589",
+          "title": "A turbulent model of time variability in X-ray binary pulsars",
+          "score": 7.506836066104354
+        }
+      ],
+      "vector": [
+        {
+          "id": "W2016427691",
+          "title": "On the Relationship between the Periodic and Aperiodic Variability of Accreting X‐Ray Pulsars",
+          "score": 0.8747445940971375
+        },
+        {
+          "id": "W2000089589",
+          "title": "A turbulent model of time variability in X-ray binary pulsars",
+          "score": 0.8598240613937378
+        },
+        {
+          "id": "W2594250205",
+          "title": "The Stochastic X-Ray Variability of the Accreting Millisecond Pulsar MAXI J0911–655",
+          "score": 0.8536423444747925
+        }
+      ]
+    },
+    {
+      "query": "accretion column eclipse phase resolved variability",
+      "bm25": [
+        {
+          "id": "W2150552231",
+          "title": "Post-glitch variability in the anomalous X-ray pulsar 1RXS J170849.0–400910",
+          "score": 5.484811948524312
+        },
+        {
+          "id": "W2016427691",
+          "title": "On the Relationship between the Periodic and Aperiodic Variability of Accreting X‐Ray Pulsars",
+          "score": 3.4951682548232244
+        },
+        {
+          "id": "W2084034713",
+          "title": "X-ray variability of the pulsar Vela X-1 as observed with ART-P/Granat",
+          "score": 3.227833623926147
+        }
+      ],
+      "vector": [
+        {
+          "id": "W2594250205",
+          "title": "The Stochastic X-Ray Variability of the Accreting Millisecond Pulsar MAXI J0911–655",
+          "score": 0.8584804534912109
+        },
+        {
+          "id": "W2188719749",
+          "title": "Determination of parameters of Long-Term variability of the X-ray pulsar LMC X-4",
+          "score": 0.8547662496566772
+        },
+        {
+          "id": "W2038558267",
+          "title": "The Detection of Variability from the Candidate Infrared Counterpart to the Anomalous X-Ray Pulsar 1E 1048.1−5937",
+          "score": 0.8503000736236572
+        }
+      ]
+    },
+    {
+      "query": "Почему шумовая переменность зависит от фазы пульсаций?",
+      "bm25": [],
+      "vector": [
+        {
+          "id": "W2594250205",
+          "title": "The Stochastic X-Ray Variability of the Accreting Millisecond Pulsar MAXI J0911–655",
+          "score": 0.8019382953643799
+        },
+        {
+          "id": "W2000089589",
+          "title": "A turbulent model of time variability in X-ray binary pulsars",
+          "score": 0.7960817813873291
+        },
+        {
+          "id": "W2150552231",
+          "title": "Post-glitch variability in the anomalous X-ray pulsar 1RXS J170849.0–400910",
+          "score": 0.7915524244308472
+        }
+      ]
+    },
+    {
+      "query": "Какие ограничения есть у моделей переменности EXO 2030+375?",
+      "bm25": [],
+      "vector": [
+        {
+          "id": "W2038558267",
+          "title": "The Detection of Variability from the Candidate Infrared Counterpart to the Anomalous X-Ray Pulsar 1E 1048.1−5937",
+          "score": 0.7860115766525269
+        },
+        {
+          "id": "W2188719749",
+          "title": "Determination of parameters of Long-Term variability of the X-ray pulsar LMC X-4",
+          "score": 0.7842806577682495
+        },
+        {
+          "id": "W2594250205",
+          "title": "The Stochastic X-Ray Variability of the Accreting Millisecond Pulsar MAXI J0911–655",
+          "score": 0.7796057462692261
+        }
+      ]
+    }
+  ],
+  "metrics": {}
+}
