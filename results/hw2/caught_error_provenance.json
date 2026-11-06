@@ -1,0 +1,23 @@
+{
+  "verification_tool": "Codex",
+  "implementation_author": "AI4Science/Goose",
+  "bug_type": "Observed defect in the initial loader: it accepted an altered NPZ despite a stale manifest SHA256",
+  "bug_reproduction_note": "The initial implementation was recovered from the saved review snapshot and checked against its recorded original SHA256; this is a later reproducible copy, not a claim that the original buggy version was committed before it was corrected.",
+  "original_buggy_source_sha256": "178ffb760082181c45ee7157559281514634eeb2600bd5ddf5b77435462e75d7",
+  "correct_source_sha256": "d989de2e084c6a292c9fecf783875b324f4ececaa2e14b273974e2dad89c7338",
+  "unchanged_test_sha256": "89fd5baca562083b9d882f93c5e28891e38086d1780dd1a062d671e3aa4a28c4",
+  "source_method_commit": "eb9d24a572d9a18443f51c19107db2be8dcd7cf1",
+  "package_method_commit": "39c32c1da6aff49a47f86685cd42d7cd61c9595d",
+  "source_implementation_commit": "64831b89d7cb2b9c19a61b8cb40006eadec81748",
+  "package_implementation_commit": "b6df452699599e4072127720692557736defe892",
+  "bug_branch": "hw2-bug-missing-sha",
+  "bug_commit": "d8b0049b004b480e920345ed7543a809eb17439e",
+  "test_nodeid": "checks/hw2/test_profile_shape.py::test_manifest_sha_rejects_tampered",
+  "before_exit_code": 1,
+  "after_exit_code": 0,
+  "full_verifier_exit_code": 0,
+  "full_tests_passed": 18,
+  "real_profiles_R_E_calculated": false,
+  "synthetic_seed_campaign_run": false,
+  "interpretation": "Same frozen test fails on the old loader and passes on the corrected loader. No scientific dependence has been inferred."
+}

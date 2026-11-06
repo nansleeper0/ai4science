@@ -1,0 +1,13 @@
+[порождено: Codex] Независимая техническая проверка загрузчика. Учебная реализация — AI4Science/Goose.
+Correct implementation commit: b6df452699599e4072127720692557736defe892
+Test file SHA256: 89fd5baca562083b9d882f93c5e28891e38086d1780dd1a062d671e3aa4a28c4
+Command: /usr/bin/python3 -m pytest -p no:cacheprovider checks/hw2/test_profile_shape.py::test_manifest_sha_rejects_tampered -q
+Exit code: 0
+
+.                                                                        [100%]
+1 passed in 0.13s
+
+Full verifier command: /usr/bin/python3 -m pytest -p no:cacheprovider checks/hw2 -q
+Exit code: 0
+..................                                                       [100%]
+18 passed in 0.27s

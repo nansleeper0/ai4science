@@ -1,0 +1,40 @@
+[порождено: Codex] Независимая техническая проверка загрузчика. Учебная реализация — AI4Science/Goose.
+Bug branch: hw2-bug-missing-sha
+Bug commit: d8b0049b004b480e920345ed7543a809eb17439e
+Test file SHA256: 89fd5baca562083b9d882f93c5e28891e38086d1780dd1a062d671e3aa4a28c4
+Command: /usr/bin/python3 -m pytest -p no:cacheprovider checks/hw2/test_profile_shape.py::test_manifest_sha_rejects_tampered -q
+Exit code: 1
+
+F                                                                        [100%]
+=================================== FAILURES ===================================
+______________________ test_manifest_sha_rejects_tampered ______________________
+
+tmp_path = PosixPath('/tmp/pytest-of-artem/pytest-10/test_manifest_sha_rejects_tamp0')
+
+    def test_manifest_sha_rejects_tampered(tmp_path):
+        """Изменённый NPZ со старым SHA отклоняется, даже если средний RATE сохранён."""
+        files = _make_10obs()
+        rows = [_manifest_row(b, n, o) for b, (n, o) in enumerate(files.items(), 1)]
+        folder = _make_manifest_dir(tmp_path, rows, files)
+        _finalize_manifest(folder, rows, files)
+        # корректный набор загружается
+        assert len(load_dataset(folder)) == 10
+        # подменяем содержимое одного NPZ, сохраняя средний RATE
+        name = rows[0]["output_file"]
+        o = files[name]
+        prof = o["rate"][0].copy()
+        prof[0] += 1.0  # меняем данные
+        prof[1] -= 1.0  # компенсируем, чтобы средний RATE сохранился
+        new_obs = _make_obs(prof, bin_id=o["bin_id"],
+                            source_filename=o["source_filename"],
+                            obs_id=o["obs_id"])
+        assert float(np.mean(new_obs["rate"])) == pytest.approx(
+            float(np.mean(o["rate"])), rel=1e-12)
+        _write_npz(folder / name, new_obs)
+>       with pytest.raises(ProfileShapeError, match="SHA256"):
+E       Failed: DID NOT RAISE ProfileShapeError
+
+checks/hw2/test_profile_shape.py:167: Failed
+=========================== short test summary info ============================
+FAILED checks/hw2/test_profile_shape.py::test_manifest_sha_rejects_tampered
+1 failed in 0.16s
