@@ -1,0 +1,74 @@
+[порождено: Codex] Независимое воспроизведение в чистом локальном Git-клоне и новом venv.
+Commit: 008c6a8f64ac4c4cf60e5c10e0b252e61403a259
+
+## verifier
+Command: python -m pytest -p no:cacheprovider checks/hw2 -q
+Exit code: 0
+Seconds: 1.939
+.........................................                                [100%]
+41 passed in 1.67s
+
+
+## compare
+Command: python /tmp/hw2_clean_verification_y3fdoqr9/compare.py
+Exit code: 0
+Seconds: 0.127
+Synthetic and real JSON/CSV/NPZ agree with saved results.
+
+
+## bug_before
+Command: python -m pytest -p no:cacheprovider checks/hw2/test_profile_shape.py::test_manifest_sha_rejects_tampered -q
+Exit code: 1
+Seconds: 0.352
+F                                                                        [100%]
+=================================== FAILURES ===================================
+______________________ test_manifest_sha_rejects_tampered ______________________
+
+tmp_path = PosixPath('/tmp/pytest-of-artem/pytest-32/test_manifest_sha_rejects_tamp0')
+
+    def test_manifest_sha_rejects_tampered(tmp_path):
+        """Изменённый NPZ со старым SHA отклоняется, даже если средний RATE сохранён."""
+        files = _make_10obs()
+        rows = [_manifest_row(b, n, o) for b, (n, o) in enumerate(files.items(), 1)]
+        folder = _make_manifest_dir(tmp_path, rows, files)
+        _finalize_manifest(folder, rows, files)
+        # корректный набор загружается
+        assert len(load_dataset(folder)) == 10
+        # подменяем содержимое одного NPZ, сохраняя средний RATE
+        name = rows[0]["output_file"]
+        o = files[name]
+        prof = o["rate"][0].copy()
+        prof[0] += 1.0  # меняем данные
+        prof[1] -= 1.0  # компенсируем, чтобы средний RATE сохранился
+        new_obs = _make_obs(prof, bin_id=o["bin_id"],
+                            source_filename=o["source_filename"],
+                            obs_id=o["obs_id"])
+        assert float(np.mean(new_obs["rate"])) == pytest.approx(
+            float(np.mean(o["rate"])), rel=1e-12)
+        _write_npz(folder / name, new_obs)
+>       with pytest.raises(ProfileShapeError, match="SHA256"):
+E       Failed: DID NOT RAISE ProfileShapeError
+
+checks/hw2/test_profile_shape.py:167: Failed
+=========================== short test summary info ============================
+FAILED checks/hw2/test_profile_shape.py::test_manifest_sha_rejects_tampered
+1 failed in 0.16s
+
+
+## bug_after
+Command: python -m pytest -p no:cacheprovider checks/hw2/test_profile_shape.py::test_manifest_sha_rejects_tampered -q
+Exit code: 0
+Seconds: 0.331
+.                                                                        [100%]
+1 passed in 0.14s
+
+
+## Previous completed calculation commands in this same fresh environment
+python src/profile_synthetic.py --output-dir results/hw2/reproduced_synthetic
+Exit code: 0; seconds: 0.51
+python src/profile_real.py --out results/hw2/reproduced_real
+Exit code: 0; seconds: 2.49
+python src/plot_profile_results.py
+Exit code: 0; seconds: 3.45
+Numerical outputs subsequently compared above.
+

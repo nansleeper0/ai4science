@@ -1,0 +1,51 @@
+{
+  "checked_by": "Codex",
+  "date": "2026-11-08",
+  "package_commit": "008c6a8f64ac4c4cf60e5c10e0b252e61403a259",
+  "fresh_git_clone": true,
+  "fresh_virtual_environment": true,
+  "installed_environment": {
+    "python": "3.10.12",
+    "packages": {
+      "numpy": "1.26.4",
+      "scipy": "1.15.3",
+      "matplotlib": "3.9.3",
+      "pytest": "9.1.1"
+    }
+  },
+  "checks": {
+    "verifier": {
+      "exit_code": 0,
+      "seconds": 1.939
+    },
+    "compare": {
+      "exit_code": 0,
+      "seconds": 0.127
+    },
+    "bug_before": {
+      "exit_code": 1,
+      "seconds": 0.352
+    },
+    "bug_after": {
+      "exit_code": 0,
+      "seconds": 0.331
+    },
+    "synthetic": {
+      "exit_code": 0,
+      "seconds": 0.51
+    },
+    "real": {
+      "exit_code": 0,
+      "seconds": 2.49
+    },
+    "figures": {
+      "exit_code": 0,
+      "seconds": 3.45
+    }
+  },
+  "verifier_tests_passed": 41,
+  "all_saved_numerical_outputs_reproduced": true,
+  "published": false,
+  "user_report_acceptance": false,
+  "note": "The successful calculations preceded a temporary checkout failure caused by regenerated PDF metadata. Bug-before check therefore used a separate clean clone; no source artefacts were reverted."
+}
