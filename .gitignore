@@ -4,3 +4,5 @@ __pycache__/
 .venv/
 .env
 .env.*
+
+results/hw2/reproduced_*/
